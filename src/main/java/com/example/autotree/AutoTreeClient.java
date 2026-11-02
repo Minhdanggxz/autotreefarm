@@ -336,7 +336,7 @@ public class AutoTreeClient implements ClientModInitializer {
 
         if (!logs.isEmpty() && tick - harvestStartTick < HARVEST_TIMEOUT) {
             BlockPos log = logs.get(0);
-            hold(mc, st -> st.getItem() instanceof AxeItem, 0);
+            hold(mc, st -> st.isIn(ItemTags.AXES), 0);
             Vec3d cc = Vec3d.ofCenter(log);
             face(p, cc);
             Vec3d eye = p.getEyePos();
