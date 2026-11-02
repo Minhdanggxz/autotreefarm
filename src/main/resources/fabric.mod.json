@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "autotree",
+  "version": "${version}",
+  "name": "AutoTree",
+  "description": "Tự động chặt cây, bón bột xương, trồng lại mầm và lấy bột xương qua /order.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.autotree.AutoTreeClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
